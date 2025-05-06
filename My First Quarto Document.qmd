@@ -1,0 +1,117 @@
+---
+title: "My Life And Personal Interest"
+author: "Tung Li Qin"
+format: html
+toc: true
+editor: visual
+date: today
+---
+
+# Self-Introduction
+
+```{r}
+#| label: fig-image
+#| fig-cap: "Im the Guy in the centre"
+#| out-width: 60%
+knitr::include_graphics("WIN_20240626_10_44_25_Pro.jpg")
+```
+
+Hello good people, you can find out the professional side of me at [LinkedIn](www.linkedin.com/in/tung-li-qin). I really do not like complicated math questions because of all the different superscripts in the formula like ∑^x^~y~
+
+## **Education**: Where you studied and what you studied
+
+1.  Ai Tong Primary School
+2.  Ang Mo Kio Secondary School
+3.  Singapore Polytechnic
+4.  Singapore Institute of Technology
+
+## **Career Plans**: Your Goal or interest
+
+-   Project Manager
+
+-   Cyber Security Audit and Consulting
+
+-   Full-Stack Developer
+
+## **Hobbies**: What you enjoy doing in your free time
+
+-   Sleeping
+-   Running
+-   Diving
+
+## **Travel Experience**: Places you have visited or with to visit
+
+-   China
+-   Hong Kong
+-   Malaysia
+
+## **Recipes**: Share favorite dish and how to make it
+
+My go-to favorite recipe is ***LAKSA***. Steps:
+
+1.  Fry some dried shrimps
+2.  Add in ready-made laksa paste
+3.  Add in Boiling water
+4.  Cook up some noodles, prawns and fishcake slices
+5.  Serve with H~2~O
+
+## **Favorite life quote**
+
+> Life is like diving at the seabed. The only way is up or die
+
+
+# Code Example
+
+```{r}
+#| label: Hello label
+#| echo: true
+#| eval: true
+#| include: true
+print("Hello, CSC3107")
+```
+
+```{r}
+#| label: load-mpg option
+library(ggplot2)
+data(mpg)
+```
+
+```{r}
+#| label: ggplot scaterplot
+#| fig-width: 5
+#| fig-height: 5
+#| include: true
+ggplot(data = mpg, aes(x=displ, y= hwy)) + geom_point()
+
+```
+The higher the highway-miles per gallon, the lower the engine displacement, with a few cases of anomaly.
+
+One things i dislike about this visualization is that there is very little contrast in the backgrounds against the grid, and viewers need to mentally draw a line to conclude the relationship. Adding a line to fit the relation ship and adding more colors to the graph would make it more visually appealing.
+
+```{r}
+ggplot(data = mpg, aes(x=manufacturer)) + geom_bar() + labs(
+  title = "Number of Vehicles by Manufacturer",
+  x = "Manufacturer",
+  y = "Count"
+)
+
+```
+The bar chart easily shows which manufacturer has the most number of vehicles. The chart is easy to read and understand, but it could be improved by adding a color gradient to the bars to make it more visually appealing. Ordering the brands from highest count to lower count can provide a better comparative visual. However, better colors should be used to make the chart more visually appealing.
+
+# Reflection
+
+__One thing i learnt__
+
+In today's lab, i learnt why quarto can be proffered over jupyter notebook when it comes to doing reports etc that heavily involves data visualization. It provides more versatility and ease of use when there is a need for technical usage and non-technical usage like text and images. In last trimester's Data Analytics, the we used jupyter notebook and it was not as seamless as using quarto. That was more focused on generating the data graphics and we can only use multi-line comments to describe the visuals and it feels very clunky to have part comments part visuals from code.
+
+__What I Found Challenging__
+
+i could not get used to the code block portions initially as i started learning with MD first. but after awhile, i got used to the sequential flow usage and could "toggle" betweent the mardown portions and the Code portions
+
+__AI tools usage__
+
+*NIL*
+
+__Feedback__
+
+*NIL*
